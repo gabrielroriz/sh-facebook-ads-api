@@ -7,7 +7,7 @@ ACCESS_TOKEN="" # Access Token
 AD_ACCOUNT_ID="596758467586352" # Identificador da Conta de Anúncios
 
 curl -X POST \
-  -F "name=\"[IG] @medclass_tv - ${DESCRIPTION} - ${DAYS}D\"" \
+  -F "name=\"[IG] @contadoig - ${DESCRIPTION} - ${DAYS}D\"" \
   -F "rule={
        \"inclusions\": {
          \"operator\": \"or\",
