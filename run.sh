@@ -16,8 +16,8 @@ DAYS_ARR=(
 )
 
 ENGAGEMENTS=(
-    'ig_ad_like::Ad Like'
-    'ig_ad_comment::Ad Comment'
+    'ig_ad_like::Ad Likes'
+    'ig_ad_comment::Ad Comments'
     'ig_ad_share::Ad Share'
     'ig_ad_save::Ad Save'
     'ig_ad_cta_click::Ad CTA Click'
@@ -35,7 +35,6 @@ for index in "${ENGAGEMENTS[@]}" ; do
     DESCRIPTION="${index##*::}"
 
     for DAYS in "${DAYS_ARR[@]}"; do
-        echo ":::[LV] IG - ${DESCRIPTION} - ${DAYS}D]";
         sh ./create_ig_audience.sh "$DAYS" "$FIELD" "$DESCRIPTION"
         echo ":::✅";
     done;
