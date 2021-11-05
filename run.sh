@@ -1,3 +1,5 @@
+
+# "In last X days"
 DAYS_ARR=( 
     "3" 
     "5" 
@@ -15,6 +17,7 @@ DAYS_ARR=(
     "730"
 )
 
+# <EngagementID>::<EngagementDescription>
 ENGAGEMENTS=(
     'ig_ad_like::Ad Likes'
     'ig_ad_comment::Ad Comments'
