@@ -2,9 +2,9 @@ DAYS=$1;
 FIELD=$2; 
 DESCRIPTION=$3;
 
-PAGE_ID="4485298641544770" # Identificador da Página do Instagram
-ACCESS_TOKEN="" # Access Token
-AD_ACCOUNT_ID="596758467586352" # Identificador da Conta de Anúncios
+PAGE_ID="4485298641544770" # Identificador da Página do Instagram. (pegar via rota owned_instagram, via Network no browser)
+ACCESS_TOKEN="" # Access Token (pegar via Network no browser).
+AD_ACCOUNT_ID="596758467586352" # Identificador da Conta de Anúncios.
 
 curl -X POST \
   -F "name=\"[IG] @contadoig - ${DESCRIPTION} - ${DAYS}D\"" \
